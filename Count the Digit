@@ -1,0 +1,4 @@
+def nb_dig(n, d):
+    x = [str(i ** 2) for i in range(n+1)]
+    s = ''.join(x)
+    return sum([True for i in s if i == str(d)])
