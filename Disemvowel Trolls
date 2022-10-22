@@ -1,0 +1,8 @@
+def disemvowel(string_):
+    n_s = ''
+    for i in string_:
+        if i in ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']:
+            pass
+        else:
+            n_s += i
+    return n_s
