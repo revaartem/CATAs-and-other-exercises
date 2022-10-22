@@ -1,0 +1,11 @@
+def is_isogram(string):
+    symb = []
+    repeat_symb = []
+    for i in string.lower():
+        if (i in symb) and (i not in repeat_symb):
+            repeat_symb.append(i)
+        symb.append(i)
+    if repeat_symb != []:
+        return False
+    else:
+        return True
