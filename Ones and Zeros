@@ -1,0 +1,5 @@
+def binary_array_to_number(arr):
+    x = ''
+    for i in arr:
+        x += str(i)
+    return int(x, 2)
