@@ -1,0 +1,6 @@
+def friend(x):
+    g = []
+    for i in x:
+        if len(i) == 4:
+            g.append(i)
+    return g
