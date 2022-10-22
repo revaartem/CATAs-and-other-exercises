@@ -1,0 +1,5 @@
+def reverse_words(s):
+    w = s.split()
+    w.reverse()
+    q = " ".join(w)
+    return q
