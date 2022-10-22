@@ -1,0 +1,5 @@
+def round_to_next5(n):
+    a = n
+    while a % 5 != 0:
+        a += 1
+    return a
