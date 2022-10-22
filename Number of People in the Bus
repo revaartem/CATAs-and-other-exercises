@@ -1,0 +1,5 @@
+def number(bus_stops):
+    counter = 0
+    for i in bus_stops:
+        counter += (i[0] - i[1])
+    return counter
