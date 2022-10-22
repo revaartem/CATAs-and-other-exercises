@@ -1,0 +1,7 @@
+def remove_smallest(numbers):
+    aja = []
+    [aja.append(x) for x in numbers]
+    if aja == []:
+        return []
+    aja.remove(min(numbers))
+    return aja
