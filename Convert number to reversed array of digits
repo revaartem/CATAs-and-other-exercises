@@ -1,0 +1,6 @@
+def digitize(n):
+    w_l = []
+    for i in str(n):
+        w_l.append(int(i))
+    w_l.reverse()
+    return w_l
