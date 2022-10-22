@@ -1,0 +1,5 @@
+def sum_mix(arr):
+    w = []
+    for i in arr:
+        w.append(int(i))
+    return sum(w)
