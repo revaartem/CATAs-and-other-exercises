@@ -1,0 +1,14 @@
+def count_positives_sum_negatives(arr):
+    i = []
+    counter = 0
+    negative = 0
+    for i in arr:
+        if i > 0:
+            counter += 1
+        elif i < 0:
+            negative += i
+        elif i != int:
+            pass
+        elif i == 0:
+            return []
+    return [counter, negative] if i != [] else []
