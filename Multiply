@@ -1,0 +1,6 @@
+def multiply(a, b):
+    data = a * b
+    return data
+
+value = multiply(5, 7)
+print(value)
