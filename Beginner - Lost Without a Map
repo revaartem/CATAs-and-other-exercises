@@ -1,0 +1,6 @@
+def maps(a):
+    w_l = []
+    for i in a:
+        x = i * 2
+        w_l.append(x)
+    return w_l
