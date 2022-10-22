@@ -1,0 +1,4 @@
+def find_needle(haystack):
+    index = str(haystack.index("needle"))
+    text = "found the needle at position "
+    return (text + index)
