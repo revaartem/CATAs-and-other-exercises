@@ -1,0 +1,8 @@
+def digital_root(n):
+    q = 0
+    for i in str(n):
+        q += int(i)
+    if len(str(q)) > 1:
+        return digital_root(q)
+    else:
+        return q
