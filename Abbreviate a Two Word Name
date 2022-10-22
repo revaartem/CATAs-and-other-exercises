@@ -1,0 +1,6 @@
+def abbrev_name(name):
+    x = name.split(" ")
+    w_l = []
+    for s in x:
+        w_l.append(s.capitalize()[0])
+    return (w_l[0] + "." + w_l[1])
