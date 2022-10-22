@@ -1,0 +1,3 @@
+def solution(string):
+    res=''.join(reversed(string))
+    return res
