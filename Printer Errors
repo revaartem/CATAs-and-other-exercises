@@ -1,0 +1,7 @@
+def printer_error(s):
+    lib = 'abcdefghijklm'
+    counter_error = 0
+    for i in s:
+        if i not in lib:
+            counter_error += 1
+    return f'{counter_error}/{len(s)}'
