@@ -1,0 +1,4 @@
+def gimme(input_array):
+    a = list(input_array)
+    a.sort()
+    return input_array.index(a[1])
