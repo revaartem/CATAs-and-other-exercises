@@ -1,0 +1,10 @@
+def longest(a1, a2):
+    symb = []
+    for i in a1.lower():
+        if i not in symb:
+            symb.append(i)
+    for i in a2.lower():
+        if i not in symb:
+            symb.append(i)
+    symb.sort()
+    return ''.join(symb)
