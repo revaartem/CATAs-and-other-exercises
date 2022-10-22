@@ -1,0 +1,6 @@
+def count_sheep(n):
+    x = range(1, n + 1)
+    d = ""
+    for i in x:
+        d += f"{i} sheep..."
+    return d
