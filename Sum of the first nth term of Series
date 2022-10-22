@@ -1,0 +1,8 @@
+def series_sum(n):
+    counter = 1
+    score = []
+    for i in range(1, n + 1):
+        x = 1 / counter
+        score.append(float(x))
+        counter += 3
+    return str(format(sum(score), '.2f'))
