@@ -1,0 +1,6 @@
+def summation(num):
+    white_list = []
+    d = range(1, num + 1)
+    for i in d:
+        white_list.append(i)
+    return sum(white_list)
