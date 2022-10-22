@@ -1,0 +1,10 @@
+def points(games):
+    final = []
+    for i in games:
+        if i[0] > i[2]:
+            final.append(3)
+        elif i[0] == i[2]:
+            final.append(1)
+        else:
+            pass
+    return sum(final)
