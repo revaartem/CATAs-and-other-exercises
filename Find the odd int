@@ -1,0 +1,13 @@
+def find_it(seq):
+    index_all_numbers_of_seq = []
+    index_of_odd_number_in_list = 0
+    switch = False
+    for i in seq:
+        index_all_numbers_of_seq.append(seq.count(i))
+    while switch == False:
+        for b in index_all_numbers_of_seq:
+            if b % 2 != 0:
+                index_of_odd_number_in_list += index_all_numbers_of_seq.index(b)
+                switch += 1
+                break
+    return seq[index_of_odd_number_in_list]
