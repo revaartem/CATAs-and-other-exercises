@@ -1,0 +1,9 @@
+def get_middle(s):
+    if len(s) % 2 == 0:
+        d = int(len(s) / 2)
+        return s[d - 1] + s[d]
+    elif len(s) == 1:
+        return s
+    elif len(s) % 2 != 0:
+        q = int(len(s) / 2)
+        return s[q]
