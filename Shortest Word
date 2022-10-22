@@ -1,0 +1,8 @@
+def sortByLength(inputStr):
+    return len(inputStr)
+
+
+def find_short(s):
+    d = s.split()
+    d.sort(key=sortByLength)
+    return len(d[0])
