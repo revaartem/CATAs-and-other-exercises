@@ -1,0 +1,9 @@
+def fake_bin(x):
+    a = []
+    x = str(x)
+    for i in x:
+        if int(i) <= 4:
+            a.append("0")
+        elif int(i) >= 5:
+            a.append("1")
+    return "".join(a)
