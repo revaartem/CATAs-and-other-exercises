@@ -1,0 +1,12 @@
+def count_by(x, n):
+    if n == 1:
+        return [x]
+    w_l = [x]
+    counter = 0
+    while counter <= n:
+        d = (w_l[-1])
+        w_l.append(d + x)
+        counter += 1
+        if counter == n - 1:
+            break
+    return w_l
