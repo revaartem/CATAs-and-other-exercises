@@ -1,0 +1,9 @@
+def number(lines):
+    x = []
+    index = 1
+    for i in lines:
+        x.append(f'{index}: {i}')
+        index += 1
+    if lines == []:
+        return lines
+    return x
