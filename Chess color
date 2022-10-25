@@ -1,0 +1,18 @@
+letter = input('Please, input letter of your cage: ').lower()  #  Ввод буквы клетки
+number = int(input('Please, input number of your cage: '))   #  Ввод цифры клетки
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']  #  Список букв клеток
+number_list = range(1, 9) # Список цифр клеток
+
+
+if len(letter) >= 2:
+    print('You must enter 1 letter')
+elif number not in number_list:
+    print('Error. Please, input number from 1 to 8')  #  Сообщение о ошибке ввода цифры
+else:
+    letter_index = letters.index(letter)  #  Задаем переменной letter_index значение индекса буквы (введенной поьзователем) в списке букв
+    number_index = number_list.index(number)  #  Задаем переменной number_index значение индекса цифры (введенной пользователем) в списке цифр
+if letter_index % 2 == number_index % 2:  #  Если индексы цифры и буквы при делении на 2 ОБА не имеют остатка, или ОБА имеют остаток, выводится сообщение, что клетка Черная
+    print('Your cage is Black')
+else: # В остальных случаях пишем белая
+    print('Your cage is White')
