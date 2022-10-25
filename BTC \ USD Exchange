@@ -1,0 +1,12 @@
+btc_rate = float(input('''Greetings.
+Please, enter the current Bitcoin/USD exchange rate: ''')) #user input current Bitcoin/USD exchange rate
+usd_to_exchange = float(input('''Fixed.
+Please enter the amount to exchange: ''')) #user input the amount to exchange
+
+def operation_of_exchange (a, b):
+    return a / b #Formula for calculating the amount to be exchanged
+
+exchange_amount = operation_of_exchange(usd_to_exchange, btc_rate) #Sequence of variables
+print('''Fixed.
+Exchange amount:''', exchange_amount, '''
+Thanks for using our service. Good luck!''') #Output of the result of the exchange
