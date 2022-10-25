@@ -1,0 +1,6 @@
+def duplicate_count(text):
+    w_l = []
+    for i in text.lower():
+        if text.lower().count(i) >= 2 and i not in w_l:
+            w_l.append(i)
+    return len(w_l)
