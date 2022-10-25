@@ -1,0 +1,22 @@
+class Restaurant():
+    """Simple model of restaurant"""
+
+    def __init__(self, restaurant_name, cuisine_type):
+        """Initialization atributes of name and cuisine type"""
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
+
+    def describe(self):
+        """Metod will told us name of restaurant and what type of cuisine it is"""
+        print(f"Welcome to the {self.restaurant_name.title()} restaurant. We cook and serve {self.cuisine_type} food here.")
+
+    def open_restaurant(self):
+        print(f'{self.restaurant_name.title()} is now open!')
+a = input("Input restaurant name here: ")
+b = input('Inpute type of cuisine of restaurant here: ')
+x = Restaurant(a, b)
+x.describe()
+y = Restaurant(input("Input restaurant name here: "), input('Inpute type of cuisine of restaurant here: '))
+z = Restaurant(input("Input restaurant name here: "), input('Inpute type of cuisine of restaurant here: '))
+y.describe()
+z.describe()
