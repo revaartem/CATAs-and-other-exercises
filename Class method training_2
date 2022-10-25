@@ -1,0 +1,27 @@
+import codewars
+
+class School_boy():
+    """This class includes private information about student"""
+
+    def __init__(self, first_name, last_name, age, growth):
+        """Initialization data about student"""
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+        self.growth = growth
+
+    def describe(self):
+        """Method will show us all information abut student"""
+        print(f"""First name --- {self.first_name}
+Last name --- {self.last_name}
+Age --- {self.age}
+Growth --- {self.growth}""")
+
+    def greet_user(self):
+        """Method for greeting user"""
+        print(f'Glad to see you, {self.first_name} {self.last_name}!')
+
+x = School_boy(input("Enter your first name: "), input('Enter your last name: '), input("Enter your age: "), input('Enter your growth: '))
+x.greet_user()
+x.describe()
+print(codewars.phone())
