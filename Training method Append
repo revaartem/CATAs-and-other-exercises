@@ -1,0 +1,21 @@
+list_of_things = [1.25, 2, 5, 8, 'ss', 'qwer', [4545, 4844, 'zcdasc', 'acasc', 48484, 82682, 'scsdc'], 816, 'fef', 'fv', 616, 61161]
+list_of_new_things = []
+list_of_srting = []
+empty_list = []
+
+for i in list_of_things:
+    if type(i) == int:
+        list_of_new_things.append(i)
+    elif type(i) == str:
+        list_of_srting.append(i)
+    elif type(i) == float:
+        list_of_new_things.append(i)
+    elif type(i) == list:
+        for b in i:
+            if type(b) == int:
+                empty_list.append(b)
+            elif type(b) == str:
+                list_of_srting.append(b)
+print(list_of_new_things)
+print(list_of_srting)
+print(empty_list)
