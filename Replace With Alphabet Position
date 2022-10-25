@@ -1,0 +1,4 @@
+import string
+
+def alphabet_position(text):
+    return ' '.join([str((string.ascii_lowercase.index(i)) + 1) for i in text.lower() if i in string.ascii_lowercase])
