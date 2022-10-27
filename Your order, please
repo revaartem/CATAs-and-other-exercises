@@ -1,0 +1,12 @@
+def number_in_image_title(image_title):
+    digit_str = ''
+    for character in image_title:
+        if character.isdigit():
+            digit_str += character
+    return int(digit_str)
+
+def order(sentence):
+    w_l = []
+    x = sentence.split()
+    x = sorted(x, key=number_in_image_title)
+    return ' '.join(x)
