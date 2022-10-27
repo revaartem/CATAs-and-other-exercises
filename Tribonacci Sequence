@@ -1,0 +1,21 @@
+import copy
+
+
+def tribonacci(signature, n):
+    if n != 0:
+        x = copy.copy(signature)
+        q = []
+        indexes = [0, 1, 2]
+        for i in range(1, n + 1):
+            if i in range(1, 4):
+                q.append(signature[i - 1])
+                pass
+            if i not in range(1, 4):
+                if len(signature) >= 3:
+                    formula = q[indexes[0]] + q[indexes[1]] + q[indexes[2]]
+                q.append(formula)
+                indexes.pop(0)
+                indexes.append(i-1)
+    if n == 0:
+        return []
+    return q
