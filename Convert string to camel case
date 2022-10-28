@@ -1,0 +1,19 @@
+import string
+
+def to_camel_case(text):
+    text_only_letters = ''
+    first_word = ''
+    for i in text:
+        if i not in string.punctuation:
+            text_only_letters += i
+        elif i in string.punctuation:
+            text_only_letters += ' '
+    for i in text:
+        if i not in string.punctuation:
+            first_word += i
+        elif i in string.punctuation:
+            break
+    final_string = first_word + ''
+    for item in (text_only_letters.split())[1:]:
+        final_string += item.capitalize()
+    return final_string
