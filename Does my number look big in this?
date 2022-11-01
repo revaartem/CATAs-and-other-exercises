@@ -1,0 +1,5 @@
+def narcissistic(value):
+    x = [int(i) ** len(str(value)) for i in str(value)]
+    if value == sum(x):
+        return True
+    return False
